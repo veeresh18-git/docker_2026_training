@@ -1,0 +1,11 @@
+services:
+
+  web:
+    build: .
+    container_name: veer-vm
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./index.html:/var/www/html/index.html
