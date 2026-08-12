@@ -16,6 +16,9 @@ Only app.jar
 JRE
 
 
+Build-stage components like source code, compilers, Maven, npm, and build dependencies are required only to generate the final artifact. At runtime, the application needs only the executable artifact and its runtime environment, so multi-stage builds copy only the required artifacts into the final image, reducing size and improving security.
+
+
 
 FROM maven:3.9-openjdk-17
 
