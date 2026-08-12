@@ -7,8 +7,7 @@ Source Code
 Dependencies
 Compilation
 
-       │
-       ▼
+
 
 Runtime Stage
 -------------
