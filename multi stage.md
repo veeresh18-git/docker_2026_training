@@ -1,3 +1,22 @@
+why multi stage
+
+Builder Stage
+-------------
+Maven
+Source Code
+Dependencies
+Compilation
+
+       │
+       ▼
+
+Runtime Stage
+-------------
+Only app.jar
+JRE
+
+
+
 FROM maven:3.9-openjdk-17
 
 WORKDIR /app
