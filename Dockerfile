@@ -6,6 +6,6 @@ COPY index.html /var/www/html/index.html
 ENV app_name = 'my docker app'
 ENV host_env = 'prod'
 
-HEALTHCHECK CMD curl --fail http://localhost -- retries=3 --interval=5s  
+HEALTHCHECK CMD curl --fail http://localhost -- retries=3 --interval=5s  | exit 1
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
